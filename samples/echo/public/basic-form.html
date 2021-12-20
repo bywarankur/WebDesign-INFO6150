@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Basic-Form</title>
+  <link rel="stylesheet" href="css/forms.css" />
+</head>
+
+<body id="basic-form">
+  <fieldset>
+    <header>
+      <nav class="menubar">
+        <ul class="menu">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Contactus.html">contact us</a></li>
+          <li><a href="Help.html">Help</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div>
+      <h1><u>Basic-Form</u></h1>
+    </div>
+    <form action="" method="POST" class="form-example">
+      <nav>
+        <div class="form-example">
+          <label for="name"><b>Name:</b><span>&#42;</span></label>
+          <input type="text" id="name" name="name" required>
+        </div>
+      </nav>
+      <br>
+      <div class="form-example">
+        <label for="email"><b>Enter your email:</b><span>&#42;</span> </label>
+        <input type="email" name="email" id="email" required>
+      </div>
+      <div>
+        <label for="checkbox"> <b>Do you want us to send you annoy me emails?</b></label>
+        <input type="checkbox" id="checkbox" name="checkbox">
+      </div>
+      <br>
+      <div>
+        <label for="select"><b>Tier</b><span>&#42;</span></label>
+        <select name="select" id="select">
+          <option value="">--Please select an option--</option>
+          <option value="silver tier">Silver tier</option>
+          <option value="Gold tier">Gold tier</option>
+          <option value="Platinum tier">Platinum Tier</option>
+        </select>
+      </div>
+      <div class="form-example">
+        <input type="submit" value="submit">
+      </div>
+    </form>
+  </fieldset>
+</body>
+
+</html>

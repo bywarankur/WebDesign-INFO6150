@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+}
+
+/* 
+Body is diveded in three parts heading or menu which is "Yoga" , Logo , subheading of a topic. 
+there will be one main which includes some text 
+there is one footer which will be mention on the bottom of the page  */
+
+body {
+    display: grid;
+    grid-template-rows: "auto 1fr auto";
+    grid-template-columns: "auto 1fr";
+    grid-template-areas: 
+    "header header"
+    "localnav main"
+    "footer footer";
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(./images/background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* 
+Header includes heading that is yoga , 
+a subheader that is Invest In Your Health 
+and a logo which is an image */
+
+header {
+    grid-area: header;
+    display: grid;
+    grid-auto-rows: auto 1fr;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: 
+    "logo header"
+    "logo subheader"
+    "logo menubar";
+}
+
+header ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+header nav {
+    justify-content: space-around;
+    width: 100%;
+    background-color: rgb(168, 81, 18);
+}
+/* 
+Padding margin and area are provided or initialized in header.logo function 
+so, that it will maintain some specific aligned position */
+
+header .logo {
+    grid-area: logo;
+    padding: 0.5rem;
+    width: 10rem;
+    height: 10rem;
+}
+
+header button :hover {
+    background-color: transparent;
+}
+
+/* 
+Heading which is yoga which is under h1 tag   */
+
+header h1 {
+    grid-area: header;
+    font-size: 2.5rem;
+    padding-left: 25rem;
+    color: rgb(149, 153, 156);
+}
+
+header .subheader {
+    grid-area: subheader;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    padding-left: 23rem;
+    color: rgb(149, 153, 156);
+}
+
+.menubar {
+    grid-area: menubar;
+    margin-top: 2rem; 
+    margin-left: -5rem;
+    
+}
+
+.menubar > ul {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.menu > li {
+    padding: 0 1rem;
+    position: relative;
+    width: 100%;
+    padding-left: 7rem;
+    
+
+}
+
+.submenu {
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    max-height: 0;
+    overflow: hidden;
+    background-color: blanchedalmond;
+    transition: max-height 0.1ms;
+    font-size: 0.8rem;
+}
+
+.submenu a {
+    display: inline-block;
+    width: 100%;
+    padding: 0.3rem 0.6rem;
+    color: black;
+}
+
+.submenu a:hover {
+    background-color: rgb(226, 213, 188);
+}
+
+.menubar a {
+    padding: 1rem;
+    background-color:rgb(170, 148, 142);
+}
+
+
+ 
+.menu button {
+    background-color: transparent;
+    border: 0;
+    font: inherit;
+    padding: 0.5rem;
+ 
+
+}
+
+/* focus-within and hover are used so that it will work with both mouse as well as with keyboard */
+
+.menu > li:focus-within .submenu,      
+.menu > li:hover .submenu { 
+    max-height: 90vh;
+    visibility: visible;
+    box-sizing: border-box;
+    padding-top: 1.2rem;
+    background-color: transparent;
+    padding-left: 7rem;
+}
+
+.localnav {
+    grid-area: localnav;
+    padding: 1rem;
+    margin: 1.65rem;
+    
+    
+}
+
+.localnav ul {
+  
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding:0;   
+}
+
+.localnav li {
+    padding: 0.4rem 0;
+    
+}
+
+.localnav a {
+    color: black;
+}
+
+main {
+    grid-area: main;
+    padding: 6rem;
+    margin-left: -22.2rem;
+    margin-right: 5rem;
+    margin-top: 1rem;
+
+    background-color:rgb(66, 65, 64, 0.4);
+}
+
+/* footer is the bottom line which is -  Customize your membership and grow practice by choosing 
+from our library of classes, course and articles! */
+
+footer {
+    grid-area: footer;
+    grid-area: footer;
+    background-color:rgb(170, 148, 142);
+    position: absolute;
+    margin-left: 16rem;
+    bottom: 0; 
+}

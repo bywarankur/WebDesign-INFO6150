@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  background-color: grey;
+  box-sizing: border-box;
+  border-style: solid;
+}
+
+.posts {
+  background-color: grey;
+  color: black;
+  padding: 24px;
+  list-style: none;
+  border-style: solid;
+  border-color: powderblue;
+}
+
+a {
+  text-decoration: none;
+  padding: 6px;
+  color: pink;
+  box-sizing: border-box;
+  border-style: solid;
+
+  margin: 0;
+  padding-top: -0.8rem;
+}
+
+.comment {
+  box-sizing: border-box;
+  border-style: solid;
+  width: 100%;
+  padding: 25px;
+  background-color: coral;
+  color: white;
+  font-size: 25px;
+}
+
+.hideELe {
+  display: none;
+}
+
+.name {
+  color: aliceblue;
+  box-sizing: border-box;
+}
+
+fieldset .body,
+.name {
+  border-style: solid;
+  max-width: 500px;
+  padding: 16px;
+}
+
+.legend1 .body,
+.name {
+  margin-bottom: 0px;
+  margin-left: 16px;
+}

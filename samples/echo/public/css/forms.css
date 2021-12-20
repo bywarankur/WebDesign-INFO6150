@@ -1,0 +1,66 @@
+.form {
+    width: 100%;
+    display: grid;
+}
+header {
+    margin: 0.5rem;
+    padding: 0.6rem 2.8rem 0.6rem 1rem; 
+}
+header ul {
+    width: 100%;
+    padding: 1rem;
+    display:flex;
+    list-style-type: none;
+    justify-content: space-around;
+    background-color:plum;
+}
+
+
+
+input[type=text], select  {
+    width: 100%; 
+    padding: 1rem;
+    border: 0.5rem;
+    border-radius: 0.015rem;
+    box-sizing: border-box; 
+    
+    }
+      
+input[type=email]  {
+    width: 100%;
+    padding: 1rem ;
+    border: 0.5rem; 
+    border-radius: 0.015rem;
+    box-sizing: border-box;}
+
+h1 {
+    text-align: center;
+    }
+
+textarea {
+    width: 100%; 
+    padding: 1rem;
+    border: 0.5rem;
+    border-radius: 0.015rem;
+    box-sizing: border-box; 
+
+    }
+
+label span {
+    color: red;
+    }
+        
+input[type=submit] {
+    text-align: center;
+    padding: 0.5rem ;
+    margin: 1rem;
+    background-color: lightgreen;
+    }
+      
+html {
+    background-color:pink;
+    }
+
+      
+  
+

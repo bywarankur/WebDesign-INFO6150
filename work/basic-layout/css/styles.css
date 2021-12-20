@@ -1,0 +1,82 @@
+#homepage {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "header header"
+    "local-menu main"
+    "footer footer";
+}
+
+header {
+    grid-area: header;
+    grid-column: span 2;
+}
+
+header a:hover {
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.menubar a{
+    padding: 1rem;
+    margin: 0;
+}
+    
+.menubar ul {
+    padding: 1rem;
+    margin: 0;
+    display:flex;
+    list-style-type: none;
+    justify-content: space-around;
+    grid-area: header;
+    background-color: plum;
+}
+
+.menu {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.local-menu {
+
+    list-style-type: none;
+    grid-area: local-menu;
+    background-color: pink;
+    border-right: 1px solid black; 
+}
+
+.local-menu li {
+    padding: 0.5rem;
+    margin: 0.5rem; 
+    list-style-type: none;
+    justify-content: space-around;
+    display: flexbox;
+}
+
+.local-menu a {
+    width: 100%;
+    padding: 0.5rem;
+    display: inline-block;
+}
+
+.local-menu a:hover {
+    background-color: plum;
+}
+
+main {
+    padding: 0.5rem;
+    grid-area: main;
+    background-color: pink;
+}
+
+footer {
+    padding: 1rem;
+    margin: 0;
+    grid-area: footer;
+    background-color: plum;
+    grid-column: span 2;
+}
+
+
+
